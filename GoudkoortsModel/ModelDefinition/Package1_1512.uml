@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="73010a74-de7e-4072-b8da-f167a46c8f66"
+  name="Process" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="880cf60b-9bbc-4b2a-9b74-d946155d7ba0"
+        name="Controller"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="510bc60a-9a93-442b-8cf3-7620643494ec"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="a1c1edba-d8d1-4a94-9f04-fc435d72ac49">
+                <propertyInstance
+                  Id="da5e84aa-9180-4777-8940-52713a69c36c"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="8092aec7-a9be-4d61-b183-717dd48f0675">
+                <propertyInstance
+                  Id="f0722e79-a911-44bb-aa41-7d339f250212"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="fe320ff2-3af9-4509-98f3-bbeff54dacc8">
+                <propertyInstance
+                  Id="ee15d417-e5b8-478b-9aa4-2781071e7d9d"
+                  name="IsStatic"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="bc901ad8-682f-428b-a1b2-b53d8702f4b4">
+                <propertyInstance
+                  Id="2a3cb282-553d-40fc-a447-9f226e266e0c"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="7a00913d-7e26-4efe-bd14-17d7232c9ccd">
+                <propertyInstance
+                  Id="6b7864da-6965-45d1-afcc-b1caa30879f0"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <targetEnds>
+          <association
+            Id="46ba5610-29e0-4956-bf54-c4f30478bf76"
+            isDerived="false"
+            sourceEndRoleName=""
+            targetEndRoleName="Game"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="91e1e262-a6c3-4623-986d-e58b04ef3717"
+              LastKnownName="Game"
+              LastKnownLocation="Package_1511.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="52cb0e7b-3e6e-4291-81b9-d08d82be0b89"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="576f0df0-588a-45f4-ad43-fa788044d78a"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="c33dc2c7-8778-4ae8-b26b-785053dbef56"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="8ec46f1b-55ed-4292-8232-c184cdbf6a4c"
+                  name="Game"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="b556ad8d-37ed-42c3-9569-bdd6367a9d2f"
+        name="MapLoader"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="1ea3a34a-47d7-4a78-82f6-bb772ecb883f"
+            isDerived="false"
+            sourceEndRoleName="MapLoader"
+            targetEndRoleName="Railroad"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="dae66e8a-0fcf-4b90-afc3-d37912bfed61"
+              LastKnownName="Railroad"
+              LastKnownLocation="Package_1511.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="40711082-a0b7-4002-9ea6-76db3c58051f"
+                  name="MapLoader"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="bbee820e-b2f4-4bd6-96d8-3723d0ef371a"
+                  name="Railroad"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

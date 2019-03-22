@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4BAE8503-B6C9-4E83-A286-B11C7C16C174}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GoudkoortsConsole</RootNamespace>
+    <AssemblyName>GoudkoortsConsole</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Domain\Canal.cs" />
+    <Compile Include="Domain\Cargo.cs" />
+    <Compile Include="Domain\Cart.cs" />
+    <Compile Include="Domain\Dock.cs" />
+    <Compile Include="Domain\Field.cs" />
+    <Compile Include="Domain\Game.cs" />
+    <Compile Include="Domain\Merge.cs" />
+    <Compile Include="Domain\Railroad.cs" />
+    <Compile Include="Domain\Rails.cs" />
+    <Compile Include="Domain\Ship.cs" />
+    <Compile Include="Domain\Split.cs" />
+    <Compile Include="Domain\Switch.cs" />
+    <Compile Include="Domain\Switchyard.cs" />
+    <Compile Include="Domain\Warehouse.cs" />
+    <Compile Include="Exceptions\RailsDoesNotExistError.cs" />
+    <Compile Include="Exceptions\CannotFlipSwitchException.cs" />
+    <Compile Include="Exceptions\RailsOccupiedException.cs" />
+    <Compile Include="Presentation\InputView.cs" />
+    <Compile Include="Presentation\OutputView.cs" />
+    <Compile Include="Presentation\RailroadVistor.cs" />
+    <Compile Include="Presentation\IVisitor.cs" />
+    <Compile Include="Process\Controller.cs" />
+    <Compile Include="Process\MapLoader.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="CompleteClassDiagram.cd" />
+    <None Include="Controller_DoTick.sequencediagram" />
+    <None Include="Controller_Run_1.sequencediagram" />
+    <None Include="Game_MoveCarts.sequencediagram" />
+    <None Include="Program_Main.sequencediagram" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Controller_DoTick.sequencediagram.layout">
+      <DependentUpon>Controller_DoTick.sequencediagram</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controller_Run_1.sequencediagram.layout">
+      <DependentUpon>Controller_Run_1.sequencediagram</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game_MoveCarts.sequencediagram.layout">
+      <DependentUpon>Game_MoveCarts.sequencediagram</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Program_Main.sequencediagram.layout">
+      <DependentUpon>Program_Main.sequencediagram</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

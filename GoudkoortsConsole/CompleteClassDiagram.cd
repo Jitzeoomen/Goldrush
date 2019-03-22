@@ -1,0 +1,211 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Class Name="Domain.Canal" Collapsed="true">
+    <Position X="6" Y="3.25" Width="1.5" />
+    <AssociationLine Name="_ships" Type="Domain.Ship" FixedFromPoint="true">
+      <Path>
+        <Point X="6.75" Y="3.812" />
+        <Point X="6.75" Y="4.25" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AABCAAAAAABEQAAAAAAAAAxAAAAIQAQAAAAAAAAAAAA=</HashCode>
+      <FileName>Domain\Canal.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="_ships" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Domain.Cargo" Collapsed="true">
+    <Position X="6" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAA=</HashCode>
+      <FileName>Domain\Cargo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Domain.Cart" Collapsed="true">
+    <Position X="3.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAAAAAAAAAAAAAAAAAABAAAAAAAAgAA=</HashCode>
+      <FileName>Domain\Cart.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Field" />
+      <Property Name="Cargo" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Domain.Dock" Collapsed="true">
+    <Position X="6.75" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAAAIAACAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Domain\Dock.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Domain.Field" Collapsed="true">
+    <Position X="3.75" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AoAAAEAAAAAEAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Domain\Field.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Domain.Game" Collapsed="true">
+    <Position X="3.75" Y="3.25" Width="1.5" />
+    <AssociationLine Name="Cart" Type="Domain.Cart" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="4.5" Y="3.812" />
+        <Point X="4.5" Y="4.25" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>gBAQAEAAAUAAAQBAAAAAAAGCAAAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>Domain\Game.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Canal" />
+      <Property Name="Railroad" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Cart" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Domain.Merge" Collapsed="true">
+    <Position X="3.25" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAgAAAAAAAAAgAAAAQIAAAAAAQAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Domain\Merge.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Domain.Railroad" Collapsed="true">
+    <Position X="1.25" Y="4.25" Width="1.5" />
+    <AssociationLine Name="_warehouses" Type="Domain.Warehouse" FixedToPoint="true">
+      <Path>
+        <Point X="1.25" Y="4.531" />
+        <Point X="0.812" Y="4.531" />
+        <Point X="0.812" Y="7.25" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAIAAQAAAAAEAAAAAAAAAAAAAAAAQAAAAAAAAAWAAA=</HashCode>
+      <FileName>Domain\Railroad.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_warehouses" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Domain.Rails" Collapsed="true">
+    <Position X="5.75" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAEAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Domain\Rails.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Domain.Ship" Collapsed="true">
+    <Position X="6" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAACAAAAAAAAASAAIAAAAAAAACgA=</HashCode>
+      <FileName>Domain\Ship.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_cargo" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Domain.Split" Collapsed="true">
+    <Position X="1.5" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAgAAAAAAAAAAAAAAAIAAAQAAAAAAAAAAAIAAAAAAA=</HashCode>
+      <FileName>Domain\Split.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Domain.Switch" Collapsed="true">
+    <Position X="2.5" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Domain\Switch.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Domain.Switchyard" Collapsed="true">
+    <Position X="5" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAEAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Domain\Switchyard.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Domain.Warehouse" Collapsed="true">
+    <Position X="0.5" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAABEQAAAAAAIAAgAAAAAAAQAAAAAAAAACAA=</HashCode>
+      <FileName>Domain\Warehouse.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Presentation.InputView" Collapsed="true">
+    <Position X="1.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAQAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Presentation\InputView.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Presentation.OutputView" Collapsed="true">
+    <Position X="1.25" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAACAAAAAAAAAABAAAAAAAAABAAAAAABAAA=</HashCode>
+      <FileName>Presentation\OutputView.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Presentation.RailroadVistor" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="1.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAQAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Presentation\RailroadVistor.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Process.Controller" Collapsed="true">
+    <Position X="3.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAAgAAAAAACABAAAAQAAAAAAAAAgICgAAAY=</HashCode>
+      <FileName>Process\Controller.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_game" />
+      <Field Name="_mapLoader" />
+      <Field Name="_inputView" />
+      <Field Name="_outputView" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Process.MapLoader" Collapsed="true">
+    <Position X="6" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAgAAAAABAAAAAAAAABAAAAIAACAAAAAAAEAQ=</HashCode>
+      <FileName>Process\MapLoader.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GoudkoortsConsole.Program" Collapsed="true">
+    <Position X="3.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GoudkoortsConsole.Exceptions.CannotFlipSwitchException" Collapsed="true">
+    <Position X="8" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Exceptions\CannotFlipSwitchException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GoudkoortsConsole.Exceptions.RailsDoesNotExistError" Collapsed="true">
+    <Position X="8" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Exceptions\RailsDoesNotExistError.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GoudkoortsConsole.Exceptions.RailsOccupiedException" Collapsed="true">
+    <Position X="8" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Exceptions\RailsOccupiedException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

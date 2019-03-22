@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B82ACA8A-4C5D-4AC5-B055-4391C28ED194}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GoudkoortsModelLib</RootNamespace>
+    <AssemblyName>GoudkoortsModelLib</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GeneratedCode\Domain\Canal.cs" />
+    <Compile Include="GeneratedCode\Domain\Cargo.cs" />
+    <Compile Include="GeneratedCode\Domain\Cart.cs" />
+    <Compile Include="GeneratedCode\Domain\Dock.cs" />
+    <Compile Include="GeneratedCode\Domain\Field.cs" />
+    <Compile Include="GeneratedCode\Domain\Game.cs" />
+    <Compile Include="GeneratedCode\Domain\Merge.cs" />
+    <Compile Include="GeneratedCode\Domain\Railroad.cs" />
+    <Compile Include="GeneratedCode\Domain\Rails.cs" />
+    <Compile Include="GeneratedCode\Domain\Ship.cs" />
+    <Compile Include="GeneratedCode\Domain\Split.cs" />
+    <Compile Include="GeneratedCode\Domain\Switch.cs" />
+    <Compile Include="GeneratedCode\Domain\Switchyard.cs" />
+    <Compile Include="GeneratedCode\Domain\Warehouse.cs" />
+    <Compile Include="GeneratedCode\Presentation\InputView.cs" />
+    <Compile Include="GeneratedCode\Presentation\OutputView.cs" />
+    <Compile Include="GeneratedCode\Process\Controller.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
